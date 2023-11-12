@@ -24,3 +24,12 @@ function setDiscountPrice(){
         document.getElementById('total').innerText = newTotalPrice;
     }
 }
+
+
+// go home button
+function goHomeButton(){
+    document.getElementById('set-entry').innerHTML = ``;
+    document.getElementById('total-price').innerText = 0;
+    document.getElementById('discount').innerText = 0;
+    document.getElementById('total').innerText = 0;
+}
