@@ -27,7 +27,7 @@
             </h2>
             <p class="text-2xl font-medium">Use Promo Code <span
                     class="text-white text-2xl font-semibold py-3 px-6 bg-[#E527B2] rounded-lg ml-2">
-                    Sell200
+                    SELL200
                 </span>
             </p>
         </div>
@@ -46,7 +46,7 @@
                     <h2 class="text-black text-4xl font-semibold mb-8 ml-10">Kitchenware</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- product 1 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <div onclick="CalculateProcuctPrice('product1-name', 'product1-price')" id="product1" class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod1.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -58,12 +58,12 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">K. Accessories</h2>
-                                <p class="text-[#0b0b0b81]"><span>39.00</span> TK</p>
+                                <h2 id="product1-name" class="text-xl font-semibold">K. Accessories</h2>
+                                <p class="text-[#0b0b0b81]"><span id="product1-price">39.00</span> TK</p>
                             </div>
                         </div>
                         <!-- product 2 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <div onclick="CalculateProcuctPrice('product2-name', 'product2-price')" class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod2.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -75,12 +75,12 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">K. Accessories</h2>
-                                <p class="text-[#0b0b0b81]"><span>25.00</span> TK</p>
+                                <h2 id="product2-name" class="text-xl font-semibold">K. Accessories</h2>
+                                <p class="text-[#0b0b0b81]"><span id="product2-price">25.00</span> TK</p>
                             </div>
                         </div>
                         <!-- product 3 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <div onclick="CalculateProcuctPrice('product3-name', 'product3-price')"  class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod3.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -92,8 +92,8 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">Home Cooker</h2>
-                                <p class="text-[#0b0b0b81]"><span>49.00</span> TK</p>
+                                <h2 id="product3-name" class="text-xl font-semibold">Home Cooker</h2>
+                                <p class="text-[#0b0b0b81]"><span id="product3-price">49.00</span> TK</p>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                     <h2 class="text-black text-4xl font-semibold mb-8 ml-10">--Sportswear</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center mx-auto">
                         <!-- product 4 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <div onclick="CalculateProcuctPrice('product4-name', 'product4-price')" class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod4.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -116,12 +116,12 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">Sports Back Cap</h2>
-                                <p class="text-[#0b0b0b81]"><span>49.00</span> TK</p>
+                                <h2 id="product4-name" class="text-xl font-semibold">Sports Back Cap</h2>
+                                <p class="text-[#0b0b0b81]"><span id="product4-price">49.00</span> TK</p>
                             </div>
                         </div>
                         <!-- product 5 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <div onclick="CalculateProcuctPrice('product5-name', 'product5-price')" class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod5.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -133,12 +133,12 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">Full Jersey Set</h2>
-                                <p class="text-[#0b0b0b81]"><span>69.00</span> TK</p>
+                                <h2 id="product5-name" class="text-xl font-semibold">Full Jersey Set</h2>
+                                <p id="product5-price" class="text-[#0b0b0b81]"><span>69.00</span> TK</p>
                             </div>
                         </div>
                         <!-- product 6 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <div onclick="CalculateProcuctPrice('product6-name', 'product6-price')" class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod6.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -150,8 +150,8 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">Sports cates</h2>
-                                <p class="text-[#0b0b0b81]"><span>69.00</span> TK</p>
+                                <h2 id="product6-name" class="text-xl font-semibold">Sports cates</h2>
+                                <p id="product6-price" class="text-[#0b0b0b81]"><span>69.00</span> TK</p>
                             </div>
                         </div>
                     </div>
@@ -161,8 +161,8 @@
                     <!--Furniture product -->
                     <h2 class="text-black text-4xl font-semibold mb-8 ml-10">Furniture</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center mx-auto">
-                        <!-- product 4 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <!-- product 7 -->
+                        <div onclick="CalculateProcuctPrice('product7-name', 'product7-price')" class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod7.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -174,12 +174,12 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">Single Relax Chair</h2>
-                                <p class="text-[#0b0b0b81]"><span>185.00</span> TK</p>
+                                <h2 id="product7-name" class="text-xl font-semibold">Single Relax Chair</h2>
+                                <p class="text-[#0b0b0b81]"><span id="product7-price">185.00</span> TK</p>
                             </div>
                         </div>
-                        <!-- product 5 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <!-- product 8 -->
+                        <div onclick="CalculateProcuctPrice('product8-name', 'product8-price')" class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod8.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -191,12 +191,12 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">Children play</h2>
-                                <p class="text-[#0b0b0b81]"><span>239.00</span> TK</p>
+                                <h2 id="product8-name" class="text-xl font-semibold">Children play</h2>
+                                <p class="text-[#0b0b0b81]"><span id="product8-price">239.00</span> TK</p>
                             </div>
                         </div>
-                        <!-- product 6 -->
-                        <div class="card w-auto bg-base-100 shadow-xl border-2">
+                        <!-- product 9 -->
+                        <div onclick="CalculateProcuctPrice('product9-name', 'product9-price')" class="card w-auto bg-base-100 shadow-xl border-2">
                             <figure class="bg-gray-200 pt-10"><img class="mb-10" src="images/prod9.png"
                                     alt="K. Accessories" /></figure>
                             <div class="card-body items-center space-y-3">
@@ -208,8 +208,8 @@
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="text-xl font-semibold">Sports cates</h2>
-                                <p class="text-[#0b0b0b81]"><span>399.00</span> TK</p>
+                                <h2 id="product9-name" class="text-xl font-semibold">Sports cates</h2>
+                                <p class="text-[#0b0b0b81]"><span id="product9-price">399.00</span> TK</p>
                             </div>
                         </div>
                     </div>
@@ -217,23 +217,24 @@
             </div>
             <!-- product purchase section -->
             <div class="mx-auto w-auto lg:w-[342px] lg:mt-64">
-                <div>
+                <div class="mb-10">
                     <h2 class="text-2xl font-medium">Have coupon?</h2>
-                    <input type="text" name="" placeholder="Coupon code" id="">
-                    <button class="btn text-white bg-[#E527B2] capitalize" disabled>Apply</button>
+                   <div class="flex">
+                    <input type="text" name="" placeholder="Coupon code" id="cuppon-input">
+                    <button onclick="setDiscountPrice()" id="discount-apply-btn" class="btn text-white bg-[#E527B2] capitalize" disabled>Apply</button>
+                   </div>
                 </div>
-                <div id="setEntry">
+                <div id="set-entry" class="mb-10">
 
                 </div>
                 <div class="space-y-2">
-                    <h2 class="text-black text-xl font-medium">total price: <span class="text-[#11111180]"
-                            id="total-price">0.00</span><span class="text-[#11111180]">TK</span></h2>
+                    <h2 class="text-black text-xl font-medium">total price: <span id="total-price" class="text-[#11111180]">0.00</span> <span class="text-[#11111180]">TK</span></h2>
                     <h2 class="text-black text-xl font-medium">discount: <span class="text-[#11111180]"
-                            id="discount">0.00</span><span class="text-[#11111180]">TK</span></h2>
+                            id="discount">0.00</span> <span class="text-[#11111180]">TK</span></h2>
                     <h2 class="text-black text-xl font-medium">total: <span class="text-[#11111180]"
-                            id="total">0.00</span><span class="text-[#11111180]">TK</span></h2>
+                            id="total">.00</span> <span class="text-[#11111180]">TK</span></h2>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn bg-[#E527B2] rounded-lg text-white capitalize px-20 mt-3" onclick="my_modal_1.showModal()">Make
+                    <button id="purchase-btn" disabled class="btn bg-[#E527B2] rounded-lg text-white capitalize px-20 mt-3" onclick="my_modal_1.showModal()">Make
                         Purchase</button>
                     <dialog id="my_modal_1" class="modal">
                         <div class="modal-box flex flex-col justify-center items-center">
@@ -252,6 +253,9 @@
             </div>
         </div>
     </main>
+    <!-- link script files -->
+    <script src="scripts/uitility.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
